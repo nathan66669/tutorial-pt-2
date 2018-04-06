@@ -1,0 +1,25 @@
+[2018-04-06 22:53:48] PM2 log: ===============================================================================
+[2018-04-06 22:53:48] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+[2018-04-06 22:53:48] PM2 log: Time                 : Fri Apr 06 2018 22:53:48 GMT+0000 (UTC)
+[2018-04-06 22:53:48] PM2 log: PM2 version          : 2.10.2
+[2018-04-06 22:53:48] PM2 log: Node.js version      : 7.10.1
+[2018-04-06 22:53:48] PM2 log: Current arch         : x64
+[2018-04-06 22:53:48] PM2 log: PM2 home             : /home/ubuntu/.pm2
+[2018-04-06 22:53:48] PM2 log: PM2 PID file         : /home/ubuntu/.pm2/pm2.pid
+[2018-04-06 22:53:48] PM2 log: RPC socket file      : /home/ubuntu/.pm2/rpc.sock
+[2018-04-06 22:53:48] PM2 log: BUS socket file      : /home/ubuntu/.pm2/pub.sock
+[2018-04-06 22:53:48] PM2 log: Application log path : /home/ubuntu/.pm2/logs
+[2018-04-06 22:53:48] PM2 log: Process dump file    : /home/ubuntu/.pm2/dump.pm2
+[2018-04-06 22:53:48] PM2 log: Concurrent actions   : 2
+[2018-04-06 22:53:48] PM2 log: SIGTERM timeout      : 1600
+[2018-04-06 22:53:48] PM2 log: ===============================================================================
+[2018-04-06 22:53:48] PM2 log: Starting execution sequence in -fork mode- for app name:index id:0
+[2018-04-06 22:53:48] PM2 log: App name:index id:0 online
+[2018-04-06 22:55:59] PM2 log: Stopping app:index id:0
+[2018-04-06 22:55:59] PM2 log: App [index] with id [0] and pid [13352], exited with code [0] via signal [SIGINT]
+[2018-04-06 22:55:59] PM2 log: pid=13352 msg=process killed
+[2018-04-06 22:56:03] PM2 log: Starting execution sequence in -fork mode- for app name:Tutorial id:0
+[2018-04-06 22:56:03] PM2 log: App name:Tutorial id:0 online
+[2018-04-06 23:13:54] PM2 log: Stopping app:Tutorial id:0
+[2018-04-06 23:13:54] PM2 log: App [Tutorial] with id [0] and pid [13491], exited with code [0] via signal [SIGINT]
+[2018-04-06 23:13:54] PM2 log: pid=13491 msg=process killed
