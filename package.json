@@ -1,0 +1,24 @@
+{
+  "name": "tutorial-pt-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathan66669/tutorial-pt-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathan66669/tutorial-pt-2/issues"
+  },
+  "homepage": "https://github.com/nathan66669/tutorial-pt-2#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
