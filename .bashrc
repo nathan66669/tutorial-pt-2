@@ -5,6 +5,9 @@
 eval `ssh-agent -s`
 # Add the SSH key
 ssh-add
+export NVM_DIR="/home/ubuntu/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -119,5 +122,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export NVM_DIR="/home/ubuntu/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
