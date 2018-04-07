@@ -23,3 +23,5 @@
 [2018-04-06 23:13:54] PM2 log: Stopping app:Tutorial id:0
 [2018-04-06 23:13:54] PM2 log: App [Tutorial] with id [0] and pid [13491], exited with code [0] via signal [SIGINT]
 [2018-04-06 23:13:54] PM2 log: pid=13491 msg=process killed
+[2018-04-07 00:21:31] PM2 log: Starting execution sequence in -fork mode- for app name:tutorial-2 id:0
+[2018-04-07 00:21:31] PM2 log: App name:tutorial-2 id:0 online
