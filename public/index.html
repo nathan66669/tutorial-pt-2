@@ -194,14 +194,10 @@ span.psw {
 <script>
    var url = "http://sample-env.5fphmhwmwf.us-west-2.elasticbeanstalk.com/clan.php?key=ABC123&tag=29YR22QY"
    var myVar = setInterval(myTimer, 1000);
-fetch(url) // Call the fetch function passing the url of the API as a parameter
-.then(function(data) {
-   var memberData = JSON.parse(data)
+   var rawMemberData = fetch(url) // Call the fetch function passing the url of the API as a parameter
+   var memberData = JSON.parse(rawMemberData)
 document.getElementById("length").innerHTML  = memberData.items.length
-})
-.catch(function() {
-    // This is where you run code if the server returns any errors
-});
+
 function myTimer() {
     var d = new Date();
     document.getElementById("demo123").innerHTML = d.toLocaleTimeString();
