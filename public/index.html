@@ -153,7 +153,8 @@ span.psw {
 </style>
 </head>
 <body>
-   <h1>This is my pretty website that hopefully will start doing some shit soon</h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <h1>This is my pretty website that hopefully will start doing some shit soon</h1><br><br><br><br><br><br>
+   <p id="demo123"></p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
    
    
 
@@ -189,6 +190,12 @@ span.psw {
    </head>
 
 <script>
+   var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo123").innerHTML = d.toLocaleTimeString();
+}
 // Get the modal
 var modal = document.getElementById('id01');
 
