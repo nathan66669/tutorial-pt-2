@@ -196,15 +196,14 @@ span.psw {
    var url = "http://sample-env.5fphmhwmwf.us-west-2.elasticbeanstalk.com/clan.php?key=ABC123&tag=29YR22QY"
    var myVar = setInterval(myTimer, 1000);
 fetch(url,{mode: 'no-cors'}) // Call the fetch function passing the url of the API as a parameter
-         .then(function(response) {
      .then(function(response) {
     return response.json();
   })
   .then(function(myJson) {
     console.log(myJson);
-   document.getElementById("length2").innerHTML  = myJSON.items.length
-    var memberData = JSON.parse(myJSON)
-document.getElementById("length").innerHTML  = memberData.items.length
+   document.getElementById("length2").innerHTML  = myJSON.items.length;
+    var memberData = JSON.parse(myJSON);
+document.getElementById("length").innerHTML  = memberData.items.length;
   });
    
 function myTimer() {
