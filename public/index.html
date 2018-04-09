@@ -155,7 +155,8 @@ span.psw {
 <body>
    <h1>This is my pretty website that hopefully will start doing some shit soon</h1><br>
    <br>
-   <p id="length"></p><br><br><br><br>
+   <p id="length"></p><br>
+   <p id="length2"></p><br><br><br>
    <p id="demo123"></p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
    
    
@@ -196,14 +197,13 @@ span.psw {
    var myVar = setInterval(myTimer, 1000);
 fetch(url,{mode: 'no-cors'}) // Call the fetch function passing the url of the API as a parameter
          .then(function(response) {
+   document.getElementById("length2").innerHTML  = response.items.length
    console.log(response)
-    var memberData = JSON.parse('response')
+    var memberData = JSON.(response)
 document.getElementById("length").innerHTML  = memberData.items.length
-fetch('http://example.com/movies.json')
-  })
-  .then(function(myJson) {
-    console.log(myJson);
-  });
+   
+})
+   
 function myTimer() {
     var d = new Date();
     document.getElementById("demo123").innerHTML = d.toLocaleTimeString();
