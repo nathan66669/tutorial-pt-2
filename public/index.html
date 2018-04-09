@@ -196,7 +196,8 @@ span.psw {
    var myVar = setInterval(myTimer, 1000);
 fetch(url,{mode: 'no-cors'}) // Call the fetch function passing the url of the API as a parameter
          .then(function(response) {
-    var memberData = JSON.parse(response)
+   console.log(response)
+    var memberData = JSON.parse('response')
 document.getElementById("length").innerHTML  = memberData.items.length
 fetch('http://example.com/movies.json')
   })
