@@ -197,14 +197,14 @@ span.psw {
    var myVar = setInterval(myTimer, 1000);
 fetch(url,{mode: 'no-cors'}) // Call the fetch function passing the url of the API as a parameter
      .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    console.log(myJson);
-   document.getElementById("length2").innerHTML  = myJSON.items.length;
-    var memberData = JSON.parse(myJSON);
+    console.log(response.json());
+   document.getElementById("length2").innerHTML  = response.json().items.length;
+    var memberData = JSON.parse(response.json());
 document.getElementById("length").innerHTML  = memberData.items.length;
-  });
+  })
+  .catch(function(error) {
+console.log(error);
+});   
    
 function myTimer() {
     var d = new Date();
