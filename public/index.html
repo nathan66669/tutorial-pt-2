@@ -193,17 +193,19 @@ span.psw {
    </head>
 
 <script>
-   var url = "http://sample-env.5fphmhwmwf.us-west-2.elasticbeanstalk.com/clan.php?key=ABC123&tag=29YR22QY"
+   var url = "http://ec2-18-217-122-161.us-east-2.compute.amazonaws.com/clan.php?tag=29YR22QY&key=ABC123"
    var myVar = setInterval(myTimer, 1000);
-fetch(url,{mode: 'no-cors'}) // Call the fetch function passing the url of the API as a parameter
+fetch(url) // Call the fetch function passing the url of the API as a parameter
      .then(function(response) {
-   console.log(response);
-    console.log(response.json());
-   document.getElementById("length2").innerHTML  = response.json().items.length;
-    var memberData = JSON.parse(response.json());
-document.getElementById("length").innerHTML  = memberData.items.length;
+   return response.json();
+    })
+  .then(function(myJson) {
+    console.log(myJson);
   });
-   
+   document.getElementById("length2").innerHTML  = myJson.items.length;
+    
+document.getElementById("length").innerHTML  = memberData.items.length;
+     
 function myTimer() {
     var d = new Date();
     document.getElementById("demo123").innerHTML = d.toLocaleTimeString();
